@@ -19,8 +19,8 @@ function reduceToTotal(sourceArray, startingPoint = 0){
     return sourceArray.reduce(total, startingPoint)
 }
 
-function reduceToAllTrue(numbers) {
-    return numbers.reduce(function(total, currentValue) {
+function reduceToAllTrue(sourceArray) {
+    return sourceArray.reduce(function(total, currentValue) {
         if (currentValue) {
             return true
         } else {
@@ -29,7 +29,7 @@ function reduceToAllTrue(numbers) {
     })
 }
 
-function reduceToAnyTrue(numbers) {
+function reduceToAnyTrue(sourceArray) {
     return numbers.reduce(function(total, currentValue) {
         if (currentValue) {
             return true
