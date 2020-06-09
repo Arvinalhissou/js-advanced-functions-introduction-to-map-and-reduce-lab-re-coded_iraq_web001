@@ -38,6 +38,6 @@ function reduceToAnyTrue(sourceArray){
     else{
       return false;
     }
-    
     }
+    return sourceArray.reduce(reduceFn, false)
 }
