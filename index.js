@@ -1,14 +1,14 @@
 // Your code here
-function mapToNegativize(result){
-    return result.map(x => x * -1);
+function mapToNegativize(sourceArray){
+    return sourceArray.map(x => x * -1);
 }
 
-function mapToNoChange(result){
-    return result.map(x => x);
+function mapToNoChange(sourceArray){
+    return sourceArray.map(x => x);
 }
 
 function mapToDouble(sourceArray){
-    return result.map(x => x*2);
+    return sourceArray.map(x => x*2);
 }
 function mapToSquare(sourceArray){
     return sourceArray.map(x => x*x);
