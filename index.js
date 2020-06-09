@@ -7,14 +7,14 @@ function mapToNoChange(result){
     return result.map(x => x);
 }
 
-function mapToDouble(result){
+function mapToDouble(sourceArray){
     return result.map(x => x*2);
 }
-function mapToSquare(result){
-    return result.map(x => x*x);
+function mapToSquare(sourceArray){
+    return sourceArray.map(x => x*x);
 }
-function reduceToTotal(result, startingPoint = 0){
+function reduceToTotal(sourceArray, startingPoint = 0){
     const total = function(accumulator, currentValue){ return accumulator + currentValue }
 
-    return result.reduce(total, startingPoint)
+    return sourceArray.reduce(total, startingPoint)
 }
