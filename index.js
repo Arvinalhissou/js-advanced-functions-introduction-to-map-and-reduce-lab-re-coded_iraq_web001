@@ -13,4 +13,4 @@ function mapToDouble(result){
 function mapToSquare(result){
     return result.map(x => x*x);
 }
-function reduceToTotal(
+function reduceToTotal(accumulator, currentValue){ return accumulator + currentValue }
