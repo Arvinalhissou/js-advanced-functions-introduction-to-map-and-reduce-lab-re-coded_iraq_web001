@@ -30,7 +30,7 @@ function reduceToAllTrue(sourceArray) {
 }
 
 function reduceToAnyTrue(sourceArray) {
-    return numbers.reduce(function(total, currentValue) {
+    return sourceArray.reduce(function(total, currentValue) {
         if (currentValue) {
             return true
         } else {
