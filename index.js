@@ -10,3 +10,6 @@ function mapToNoChange(result){
 function mapToDouble(result){
     return result.map(x => x*2);
 }
+function mapToSquare(result){
+    return result.map(x => x*x);
+}
