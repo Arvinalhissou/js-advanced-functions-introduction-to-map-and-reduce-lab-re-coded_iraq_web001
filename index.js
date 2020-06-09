@@ -20,16 +20,23 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 }
 function reduceToAllTrue(sourceArray){
 
-    const reducer = function(accumulator, currentValue){  
+    const reduceFn = function(accumulator, currentValue){  
         if(accumulator == true && currentValue == true){
             return true;
         } else {
             return false;
         }
     }
-    return sourceArray.reduce(reducer, true)
+    return sourceArray.reduce(reduceFn, true)
 }
 
 function reduceToAnyTrue(sourceArray){
-  let 
+  const reduceFn = function(accumulator, currentValue){ 
+    if(accumulator == true){
+      return true;
+    }
+    else{
+      return false;
+    }
+    }
 }
