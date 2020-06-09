@@ -27,7 +27,7 @@ function reduceToAllTrue(sourceArray){
             return false;
         }
     }
-    return sourceArray.reduce(reduceFn, false)
+    return sourceArray.reduce(reduceFn, true)
 }
 
 function reduceToAnyTrue(sourceArray){
@@ -39,5 +39,5 @@ function reduceToAnyTrue(sourceArray){
       return false;
     }
     }
-    return sourceArray.reduce(reduceFn, true)
+    return sourceArray.reduce(reduceFn, false)
 }
