@@ -18,3 +18,23 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 
     return sourceArray.reduce(total, startingPoint)
 }
+
+function reduceToAllTrue(numbers) {
+    return numbers.reduce(function(total, currentValue) {
+        if (currentValue) {
+            return true
+        } else {
+            return false
+        }
+    })
+}
+
+function reduceToAnyTrue(numbers) {
+    return numbers.reduce(function(total, currentValue) {
+        if (currentValue) {
+            return true
+        } else {
+            return false
+        }
+    })
+}
