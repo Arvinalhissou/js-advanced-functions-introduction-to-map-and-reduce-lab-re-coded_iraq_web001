@@ -18,26 +18,3 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 
     return sourceArray.reduce(total, startingPoint)
 }
-function reduceToAllTrue(sourceArray){
-
-    const reduceFn = function(accumulator, currentValue){  
-        if(accumulator == true && currentValue == true){
-            return true;
-        } else {
-            return false;
-        }
-    }
-    return sourceArray.reduce(reduceFn, true)
-}
-
-function reduceToAnyTrue(sourceArray){
-  const reduceFn = function(accumulator, currentValue){ 
-    if(accumulator == true){
-      return true;
-    }
-    else{
-      return false;
-    }
-    }
-    return sourceArray.reduce(reduceFn, false)
-}
